@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
-    <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-white">
+    <section className="relative pt-32 pb-20 lg:pt-32 lg:pb-32 overflow-hidden bg-white">
 
       {/* ===== BACKGROUND ===== */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
@@ -13,13 +13,14 @@ export default function Hero() {
         <div className="absolute bottom-[-10%] right-[10%] w-[50vw] h-[50vw] bg-brand-cyan/5 blur-[120px] rounded-full" />
       </div>
 
-      <div className="container mx-auto px-6 lg:px-16 grid lg:grid-cols-2 gap-16 items-center">
+      <div className="container mx-auto px-8 lg:px-24 xl:px-32 grid lg:grid-cols-2 gap-16 lg:gap-32 items-center overflow-visible">
 
         {/* ===== LEFT CONTENT ===== */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
+          className="lg:pl-8 xl:pl-12"
         >
           {/* Badge */}
           <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-brand-indigo/5 border border-brand-indigo/10 mb-6">
@@ -96,66 +97,9 @@ export default function Hero() {
           <div className="absolute w-[320px] h-[320px] bg-brand-indigo/10 blur-[120px] rounded-full z-0" />
 
           {/* Phone Wrapper */}
-          <div className="relative z-10 overflow-visible scale-[0.9] sm:scale-100">
+          <div className="relative z-10 overflow-visible scale-[0.8] sm:scale-90 lg:scale-100 -mt-8 sm:mt-0">
             <PhoneMockup />
 
-            {/* VERIFIED CARD */}
-            <motion.div
-              animate={{ y: [0, -6, 0] }}
-              transition={{ duration: 5, repeat: Infinity }}
-              className="absolute 
-                         top-6 left-1/2 -translate-x-1/2
-                         sm:top-2 sm:left-auto sm:right-4 sm:translate-x-0
-                         
-                         bg-white/95 backdrop-blur-xl
-                         px-4 py-3 rounded-xl
-                         shadow-xl border border-slate-100
-                         ring-1 ring-black/5
-                         
-                         flex items-center gap-3
-                         z-50"
-            >
-              <div className="w-9 h-9 rounded-lg bg-green-50 flex items-center justify-center text-green-600 font-bold">
-                ✓
-              </div>
-              <div>
-                <p className="text-[10px] text-slate-400 font-bold uppercase">
-                  Verified
-                </p>
-                <p className="text-xs font-semibold text-slate-900">
-                  Business Approved
-                </p>
-              </div>
-            </motion.div>
-
-            {/* ROI CARD */}
-            <motion.div
-              animate={{ y: [0, 6, 0] }}
-              transition={{ duration: 6, repeat: Infinity, delay: 1 }}
-              className="absolute 
-                         -bottom-6 left-2
-                         sm:-bottom-8 sm:-left-6
-                         
-                         bg-white/95 backdrop-blur-xl
-                         px-4 py-3 rounded-xl
-                         shadow-xl border border-slate-100
-                         ring-1 ring-black/5
-                         
-                         flex items-center gap-3
-                         z-50"
-            >
-              <div className="w-9 h-9 rounded-lg bg-brand-indigo text-white flex items-center justify-center font-bold">
-                3x
-              </div>
-              <div>
-                <p className="text-[10px] text-slate-400 font-bold uppercase">
-                  ROI
-                </p>
-                <p className="text-xs font-semibold text-slate-900">
-                  Higher Conversion
-                </p>
-              </div>
-            </motion.div>
           </div>
         </motion.div>
 

@@ -31,8 +31,8 @@ const features = [
 
 export default function Features() {
   return (
-    <section id="features" className="py-32 relative bg-white">
-      <div className="container mx-auto px-6 relative z-10">
+    <section id="features" className="py-24 lg:py-32 relative bg-white overflow-hidden">
+      <div className="container mx-auto px-8 lg:px-24 xl:px-32 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-24">
           <motion.div
             initial={{ opacity: 0, y: 15 }}

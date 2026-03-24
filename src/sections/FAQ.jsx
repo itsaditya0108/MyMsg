@@ -25,8 +25,11 @@ export default function FAQ() {
   const [openIdx, setOpenIdx] = useState(0);
 
   return (
-    <section id="faq" className="py-16 bg-white relative">
-      <div className="container mx-auto px-6 max-w-5xl">
+    <section className="py-24 lg:py-32 bg-white relative overflow-hidden">
+        {/* Decorative backdrop glow */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-brand-indigo/5 blur-[120px] rounded-full pointer-events-none" />
+        
+      <div className="container mx-auto px-8 lg:px-24 xl:px-32 relative z-10">
         <div className="flex flex-col lg:flex-row gap-20">
             {/* LEFT HEADER */}
             <div className="lg:w-1/3">

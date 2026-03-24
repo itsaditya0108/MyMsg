@@ -1,6 +1,7 @@
 import FAQ from "../sections/FAQ";
 import { motion } from "framer-motion";
 import { Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function FAQPage() {
   return (
@@ -34,7 +35,7 @@ export default function FAQPage() {
           </div>
           <h3 className="text-3xl md:text-5xl font-black text-slate-900 mb-6 tracking-tight">Need dedicated help?</h3>
           <p className="text-slate-500 mb-10 max-w-xl mx-auto font-medium">Our global team of RCS experts is here to assist you 24 hours a day, 7 days a week.</p>
-          <button className="btn btn-primary px-10">Get In Touch Now</button>
+          <Link to="/contact" className="btn btn-primary px-10">Get In Touch Now</Link>
         </motion.div>
       </div>
     </div>

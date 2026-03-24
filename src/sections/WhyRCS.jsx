@@ -3,8 +3,8 @@ import { CheckCircle2, Zap, BarChart, ArrowRight } from "lucide-react";
 
 export default function WhyRCS() {
   return (
-    <section className="py-32 relative bg-brand-bg">
-      <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
+    <section className="py-24 lg:py-32 relative bg-brand-bg overflow-hidden">
+      <div className="container mx-auto px-8 lg:px-24 xl:px-32 grid lg:grid-cols-2 gap-20 items-center">
         {/* LEFT CONTENT */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}

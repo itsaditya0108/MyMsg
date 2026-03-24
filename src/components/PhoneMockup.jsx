@@ -157,38 +157,36 @@ export default function PhoneMockup() {
       
       {/* Top Floating Badge - Verified */}
       <motion.div
-        initial={{ opacity: 0, x: 20, y: -20 }}
-        animate={{ opacity: 1, x: 0, y: 0 }}
-        transition={{ delay: 1, duration: 1 }}
-        className="absolute -top-6 -right-12 z-40 bg-white/90 backdrop-blur-xl p-4 rounded-3xl border border-slate-200 shadow-2xl flex items-center gap-4 min-w-[180px]"
+        animate={{ y: [0, -8, 0] }}
+        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute -top-4 -right-10 z-40 bg-white/95 backdrop-blur-xl p-3 rounded-2xl border border-slate-200 shadow-2xl flex items-center gap-3 min-w-[160px]"
       >
-        <div className="w-12 h-12 bg-emerald-50 rounded-2xl flex items-center justify-center text-emerald-500 shadow-inner">
-          <CheckCircle className="w-7 h-7" strokeWidth={3} />
+        <div className="w-9 h-9 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-500 shadow-inner">
+          <CheckCircle className="w-5 h-5" strokeWidth={3} />
         </div>
         <div>
-          <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest block">Verified</span>
-          <span className="text-sm font-black text-slate-900 leading-tight">Business Approved</span>
+          <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest block leading-none mb-1">Verified</span>
+          <span className="text-[11px] font-black text-slate-900 leading-tight block">Business Approved</span>
         </div>
       </motion.div>
 
       {/* Bottom Floating Badge - ROI */}
       <motion.div
-        initial={{ opacity: 0, x: -20, y: 20 }}
-        animate={{ opacity: 1, x: 0, y: 0 }}
-        transition={{ delay: 1.5, duration: 1 }}
-        className="absolute -bottom-10 -left-12 z-40 bg-white/90 backdrop-blur-xl p-4 rounded-3xl border border-slate-200 shadow-2xl flex items-center gap-4 min-w-[180px]"
+        animate={{ y: [0, 8, 0] }}
+        transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+        className="absolute -bottom-6 -left-10 z-40 bg-white/95 backdrop-blur-xl p-3 rounded-2xl border border-slate-200 shadow-2xl flex items-center gap-3 min-w-[160px]"
       >
-        <div className="w-12 h-12 bg-brand-indigo rounded-2xl flex items-center justify-center text-white font-black text-lg shadow-lg shadow-brand-indigo/30">
+        <div className="w-9 h-9 bg-brand-indigo rounded-xl flex items-center justify-center text-white font-black text-sm shadow-xl shadow-brand-indigo/30">
           3x
         </div>
         <div>
-          <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest block">ROI</span>
-          <span className="text-sm font-black text-slate-900 leading-tight">Higher Conversion</span>
+          <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest block leading-none mb-1">ROI</span>
+          <span className="text-[11px] font-black text-slate-900 leading-tight block">Higher Conversion</span>
         </div>
       </motion.div>
 
       {/* Decorative Shadow Blur */}
-      <div className="absolute -inset-10 bg-brand-indigo/10 blur-[100px] -z-10 animate-pulse" />
+      <div className="absolute -inset-10 bg-brand-indigo/10 blur-[100px] -z-10" />
     </div>
   );
 }

@@ -15,11 +15,11 @@ export default function Home() {
       <FAQ />
       
       {/* Final CTA */}
-      <section className="py-24 bg-white relative overflow-hidden">
+      <section className="py-24 lg:py-32 bg-white relative overflow-hidden">
         {/* Decorative backdrop glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-brand-indigo/5 blur-[120px] rounded-full pointer-events-none" />
         
-        <div className="container mx-auto relative z-10">
+        <div className="container mx-auto px-8 lg:px-24 xl:px-32 relative z-10">
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}

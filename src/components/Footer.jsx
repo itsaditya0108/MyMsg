@@ -7,16 +7,25 @@ export default function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-16 mb-20">
           <div className="col-span-1 md:col-span-2">
-            <Link to="/" className="flex items-center gap-3 mb-8 group">
-              <div className="relative w-10 h-10 flex items-center justify-center">
-                <div className="absolute inset-0 bg-brand-indigo rounded-xl rotate-6 group-hover:rotate-12 transition-transform duration-300 shadow-lg shadow-brand-indigo/20 opacity-20" />
-                <div className="relative w-8 h-8 bg-gradient-to-br from-brand-indigo via-brand-violet to-brand-cyan rounded-lg flex items-center justify-center text-white shadow-md">
-                  <MessageSquare size={18} strokeWidth={3} />
+            <Link 
+              to="/" 
+              className="flex items-center gap-3 mb-8 group"
+            >
+              <div className="relative w-11 h-11 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                {/* Multi-color gradient rings - more vibrant */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-brand-indigo via-brand-cyan to-yellow-400 rounded-[1.2rem] opacity-30 scale-110 blur-md group-hover:opacity-50 transition-opacity duration-500" />
+                
+                {/* Inner colorful box - multi-stop gradient */}
+                <div className="relative w-10 h-10 bg-gradient-to-br from-[#4f46e5] via-[#8b5cf6] to-[#06b6d4] text-white rounded-[1.1rem] flex items-center justify-center shadow-2xl shadow-brand-indigo/30 transition-all duration-500 border-t border-white/40 border-l border-white/20 font-heading">
+                  <MessageSquare size={20} strokeWidth={2.5} className="drop-shadow-lg" />
+                  
+                  {/* Vibrant accent dots - different colors */}
+                  <div className="absolute -top-1 -right-1 w-3.5 h-3.5 bg-yellow-400 rounded-full border-2 border-white shadow-lg animate-pulse" />
+                  <div className="absolute -bottom-1 -left-1 w-3 h-3 bg-brand-cyan rounded-full border-2 border-white shadow-md" />
+                  <div className="absolute top-1/2 -right-1 w-2 h-2 bg-pink-500 rounded-full border-2 border-white shadow-sm" />
                 </div>
               </div>
-              <span className="text-2xl font-black tracking-tighter text-slate-900">
-                My<span className="gradient-text">Msg</span>
-              </span>
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-brand-indigo via-brand-cyan to-brand-violet font-heading tracking-[-0.05em] text-2xl font-black">MyMsg</span>
             </Link>
             <p className="text-slate-500 font-medium max-w-sm mb-8 leading-relaxed text-sm">
               Empowering global brands with the next generation of verified, interactive messaging solutions.
