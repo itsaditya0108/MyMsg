@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@700;800;900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-brand-indigo: #4f46e5;
+  --color-brand-cyan: #06b6d4;
+  --color-brand-violet: #8b5cf6;
+  --color-brand-dark: #1e293b;
+  --color-brand-darker: #0f172a;
+  --color-brand-bg: #f8fafc;
+  
+  --font-heading: "Outfit", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-bg text-slate-900 font-body subpixel-antialiased overflow-x-hidden;
+    background-image: 
+      radial-gradient(circle at 10% 10%, rgba(79, 70, 229, 0.03), transparent 35%),
+      radial-gradient(circle at 90% 90%, rgba(6, 182, 212, 0.03), transparent 35%);
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-black tracking-tight leading-loose;
+    font-family: var(--font-heading);
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-br from-brand-indigo via-brand-indigo to-brand-cyan;
+    background-size: 200% auto;
+  }
+
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-xl border border-white shadow-xl shadow-slate-200/50;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center px-8 py-4 rounded-2xl font-black transition-all duration-500 active:scale-95 font-heading shadow-md;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-br from-brand-indigo via-brand-indigo to-brand-cyan text-white shadow-xl shadow-brand-indigo/25 hover:shadow-brand-indigo/40 hover:-translate-y-1;
+    background-size: 200% auto;
+  }
+
+  .btn-primary:hover {
+    background-position: right center;
+  }
+
+  .btn-secondary {
+    @apply bg-white border border-slate-200 text-slate-700 hover:border-brand-indigo/30 hover:bg-slate-50 hover:-translate-y-1 shadow-sm;
+  }
+
+  .btn-large {
+    @apply px-12 py-5 text-lg rounded-[2rem];
+  }
+
+  .container {
+  @apply mx-auto px-6 lg:px-12 max-w-6xl;
+}
+
+  .noise-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    pointer-events: none;
+    opacity: 0.05;
+    mix-blend-mode: overlay;
+  }
+}
+
+/* Custom keyframes */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+
+.animate-float {
+  animation: float 8s ease-in-out infinite;
+}
