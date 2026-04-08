@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ShieldCheck, Sparkles, MessageSquare, BarChart3, ArrowUpRight } from "lucide-react";
+import { ShieldCheck, Sparkles, MessageSquare, BarChart3, ArrowUpRight, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const features = [
   {
@@ -31,36 +32,45 @@ const features = [
 
 export default function Features() {
   return (
-    <section id="features" className="py-24 lg:py-32 relative bg-white overflow-hidden">
-      <div className="container mx-auto px-8 lg:px-24 xl:px-32 relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-24">
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-[11px] font-black text-brand-indigo uppercase tracking-[0.4em] mb-6 block"
+    <section id="features" className="py-24 lg:py-32 bg-white relative overflow-hidden">
+      <div className="container mx-auto px-6 lg:px-12 xl:px-24 relative z-10">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-24 gap-12">
+          <div className="max-w-2xl">
+            <motion.div
+               initial={{ opacity: 0, y: 15 }}
+               whileInView={{ opacity: 1, y: 0 }}
+               viewport={{ once: true }}
+               className="text-[10px] font-black text-brand-indigo uppercase tracking-[0.4em] mb-6 block"
+            >
+              Enterprise Capabilities
+            </motion.div>
+            <motion.h2
+               initial={{ opacity: 0, y: 20 }}
+               whileInView={{ opacity: 1, y: 0 }}
+               viewport={{ once: true }}
+               className="text-4xl md:text-6xl font-black text-slate-900 mb-8 tracking-tighter"
+            >
+              Powerful Features for <br />
+              <span className="gradient-text italic">Success.</span>
+            </motion.h2>
+            <motion.p
+               initial={{ opacity: 0, y: 20 }}
+               whileInView={{ opacity: 1, y: 0 }}
+               viewport={{ once: true }}
+               transition={{ delay: 0.2 }}
+               className="text-lg md:text-xl text-slate-500 font-medium leading-relaxed"
+            >
+              Unlock the future of customer interaction with the most advanced <span className="text-brand-indigo font-bold">My Msg RCS</span> toolset designed for enterprise scale.
+            </motion.p>
+          </div>
+
+          <Link 
+            to="/case-studies"
+            className="btn btn-secondary px-10 py-5 !rounded-2xl group cursor-pointer"
           >
-            Our Capabilities
-          </motion.div>
-          <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-            className="text-4xl md:text-5xl text-slate-900 mb-8 font-black leading-tight tracking-tighter"
-          >
-            Everything you need to <br />
-            <span className="gradient-text italic">Engage at Scale.</span>
-          </motion.h2>
-          <motion.p
-             initial={{ opacity: 0, y: 20 }}
-             whileInView={{ opacity: 1, y: 0 }}
-             viewport={{ once: true }}
-             transition={{ delay: 0.2 }}
-             className="text-lg text-slate-500 font-medium leading-relaxed"
-          >
-            Unlock the power of RCS with a comprehensive suite of tools built for modern brands.
-          </motion.p>
+            View Case Studies
+            <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </Link>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

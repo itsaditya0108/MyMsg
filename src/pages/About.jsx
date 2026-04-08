@@ -24,7 +24,7 @@ export default function About() {
   ];
 
   return (
-    <div className="pt-24 pb-24 min-h-screen relative bg-white overflow-hidden">
+    <div className="pt-32 pb-24 min-h-screen relative bg-white overflow-hidden">
       <div className="container mx-auto px-6">
         {/* HERO */}
         <motion.div

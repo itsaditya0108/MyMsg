@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function Terms() {
   return (
-    <div className="pt-48 pb-32 min-h-screen relative bg-white overflow-hidden">
+    <div className="pt-56 pb-32 min-h-screen relative bg-white overflow-hidden">
       <div className="container mx-auto px-6 max-w-4xl">
         <motion.div
            initial={{ opacity: 0, y: 20 }}

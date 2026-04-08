@@ -46,7 +46,7 @@ export default function Services() {
 
 
   return (
-    <div className="pt-24 pb-24 min-h-screen relative bg-white overflow-hidden">
+    <div className="pt-40 pb-24 min-h-screen relative bg-white overflow-hidden">
       <div className="container mx-auto px-6">
         {/* HERO SECTION */}
         <motion.div

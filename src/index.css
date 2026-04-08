@@ -26,6 +26,11 @@
     @apply font-black tracking-tight leading-loose;
     font-family: var(--font-heading);
   }
+
+  /* Universal pointer cursor for interactive elements */
+  a, button, [role="button"], input[type="submit"], select, .cursor-pointer {
+    cursor: pointer;
+  }
 }
 
 @layer components {

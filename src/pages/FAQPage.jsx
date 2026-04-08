@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function FAQPage() {
   return (
-    <div className="pt-24 pb-24 min-h-screen relative bg-brand-bg md:bg-white overflow-hidden text-center">
+    <div className="pt-40 pb-24 min-h-screen relative bg-brand-bg md:bg-white overflow-hidden text-center">
       <div className="container mx-auto px-6">
         <motion.div
            initial={{ opacity: 0, y: 30 }}

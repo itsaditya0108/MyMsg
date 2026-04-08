@@ -3,8 +3,8 @@ import { CheckCircle2, Zap, BarChart, ArrowRight } from "lucide-react";
 
 export default function WhyRCS() {
   return (
-    <section className="py-24 lg:py-32 relative bg-brand-bg overflow-hidden">
-      <div className="container mx-auto px-8 lg:px-24 xl:px-32 grid lg:grid-cols-2 gap-20 items-center">
+    <section className="py-24 lg:py-32 bg-brand-bg relative overflow-hidden">
+      <div className="container mx-auto px-6 lg:px-12 xl:px-24 grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
         {/* LEFT CONTENT */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
@@ -12,13 +12,13 @@ export default function WhyRCS() {
           viewport={{ once: true }}
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
         >
-          <div className="text-[11px] font-black text-brand-indigo uppercase tracking-[0.4em] mb-6 block">Proof in Numbers</div>
-          <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-10 leading-[1.2] tracking-tighter">
+          <div className="text-[10px] sm:text-[11px] font-black text-brand-indigo uppercase tracking-[0.4em] mb-6 block">The Proof in Numbers</div>
+          <h2 className="text-4xl sm:text-5xl font-black text-slate-900 mb-10 leading-[1.2] tracking-tighter">
             Build Trust with <br />
-            <span className="gradient-text italic">Verified RCS.</span>
+            <span className="gradient-text italic">My Msg RCS.</span>
           </h2>
-          <p className="text-lg text-slate-500 mb-12 leading-relaxed max-w-xl font-medium">
-            Join the elite 1% of brands that utilize verified messaging to cut through the noise and build genuine connections.
+          <p className="text-lg md:text-xl text-slate-500 mb-12 leading-relaxed max-w-xl font-medium">
+            Join the elite 1% of brands that utilize <span className="text-brand-indigo font-bold">My Msg RCS</span> to cut through the noise and build genuine, long-term connections.
           </p>
 
           <div className="space-y-8">

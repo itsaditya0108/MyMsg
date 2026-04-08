@@ -22,11 +22,11 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 w-full z-50 flex justify-center px-6 pt-6 pointer-events-none">
+    <div className="fixed top-0 left-0 w-full z-50 flex justify-center px-4 sm:px-6 lg:px-12 xl:px-24 pt-6 pointer-events-none">
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        className={`pointer-events-auto flex items-center justify-between px-6 py-3 rounded-[2rem] transition-all duration-500 max-w-7xl w-full border ${
+        className={`pointer-events-auto flex items-center justify-between px-6 py-3 rounded-[2rem] transition-all duration-500 w-full border ${
           isScrolled 
             ? "glass-card !bg-white/80 !shadow-2xl border-brand-indigo/10 py-3 mt-0" 
             : "bg-white/50 backdrop-blur-md border-white mt-2 shadow-sm"
@@ -54,27 +54,28 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex items-center gap-1.5 p-1 bg-slate-100/50 rounded-2xl border border-slate-200">
-          {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              to={link.path}
-              className={`relative px-5 py-2 text-[13px] font-bold transition-all duration-300 rounded-xl ${
-                location.pathname === link.path 
-                  ? "text-brand-indigo bg-white shadow-sm" 
-                  : "text-slate-500 hover:text-slate-900"
-              }`}
-            >
-              {link.name}
-              {location.pathname === link.path && (
-                <motion.div
-                  layoutId="nav-active"
-                  className="absolute inset-0 bg-white rounded-xl shadow-sm -z-10"
-                  transition={{ type: "spring", stiffness: 380, damping: 30 }}
-                />
-              )}
-            </Link>
-          ))}
+        <div className="hidden md:flex items-center gap-1 p-1.5 bg-slate-100/50 backdrop-blur-sm rounded-2xl border border-slate-200/60 relative">
+          {navLinks.map((link) => {
+            const isActive = location.pathname === link.path;
+            return (
+              <Link
+                key={link.name}
+                to={link.path}
+                className={`relative px-6 py-2.5 text-[13px] font-black transition-colors duration-300 rounded-xl z-20 ${
+                  isActive ? "text-brand-indigo" : "text-slate-500 hover:text-slate-900"
+                }`}
+              >
+                <span className="relative z-10">{link.name}</span>
+                {isActive && (
+                  <motion.div
+                    layoutId="nav-pill"
+                    className="absolute inset-0 bg-white shadow-[0_4px_12px_-4px_rgba(0,0,0,0.12)] border border-slate-100 rounded-xl z-0"
+                    transition={{ type: "spring", stiffness: 400, damping: 30 }}
+                  />
+                )}
+              </Link>
+            );
+          })}
         </div>
 
         {/* Action Button */}
