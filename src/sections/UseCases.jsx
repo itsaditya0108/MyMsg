@@ -57,7 +57,7 @@ export default function UseCases() {
               <span className="gradient-text italic">Vertical.</span>
             </motion.h2>
             <p className="text-lg md:text-xl text-slate-500 font-medium">
-              Explore how MyMsg transforms customer interactions across the world's most demanding sectors.
+              Explore how MyMsg RCS transforms customer interactions across the world's most demanding sectors.
             </p>
           </div>
           

@@ -59,7 +59,7 @@ export default function LivePreview() {
               <span className="gradient-text italic">Engagement.</span>
             </h2>
             <p className="text-lg md:text-xl text-slate-500 mb-12 font-medium leading-relaxed max-w-xl">
-               See why MyMsg outperforms traditional SMS. Deliver rich media, carousel cards, and interactive chips that drive 3x more conversions—all within the native messaging app.
+               See why MyMsg RCS outperforms traditional SMS. Deliver rich media, carousel cards, and interactive chips that drive 3x more conversions—all within the native messaging app.
             </p>
             
             <div className="space-y-6">

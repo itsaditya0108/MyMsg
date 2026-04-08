@@ -42,11 +42,11 @@ export default function Home() {
               Ready to <span className="italic text-brand-cyan">Scale</span> Up?
             </h2>
             <p className="text-brand-indigo-100/70 text-lg md:text-xl mb-12 max-w-2xl mx-auto font-medium leading-relaxed">
-              Join the future of business messaging. Start your <span className="text-white font-bold">MyMsg</span> journey today and transform how you connect with your customers forever.
+              Join the future of business messaging. Start your <span className="text-white font-bold">MyMsg RCS</span> journey today and transform how you connect with your customers forever.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link to="/services" className="btn bg-white text-[#1a2b4b] hover:bg-slate-50 px-12 py-5 !rounded-2xl shadow-xl shadow-black/10 font-black uppercase text-xs tracking-widest transition-all">
-                Get Started with MyMsg
+                Get Started with MyMsg RCS
               </Link>
               <Link to="/contact" className="btn border border-white/20 text-white px-12 py-5 !rounded-2xl hover:bg-white/10 transition-all font-black uppercase text-xs tracking-widest backdrop-blur-sm">
                 Contact Sales

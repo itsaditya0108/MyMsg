@@ -51,7 +51,7 @@ export default function HowItWorks() {
             How it <span className="gradient-text italic">Works.</span>
           </motion.h2>
           <p className="text-lg md:text-xl text-slate-500 font-medium">
-            Explore how MyMsg transforms customer interactions across the world's most demanding sectors.
+            Explore how MyMsg RCS transforms customer interactions across the world's most demanding sectors.
           </p>
         </div>
 

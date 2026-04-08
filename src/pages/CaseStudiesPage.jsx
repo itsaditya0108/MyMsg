@@ -12,7 +12,7 @@ const studies = [
       { label: "Click-Through Rate", value: "12.5%" },
       { label: "Return on Ad Spend", value: "8.2x" }
     ],
-    desc: "Fashion Hub wanted to cut through the noise of traditional SMS marketing. By implementing MyMsg carousels during their summer campaign, they delivered immersive product showcases directly to customer inboxes.",
+    desc: "Fashion Hub wanted to cut through the noise of traditional SMS marketing. By implementing MyMsg RCS carousels during their summer campaign, they delivered immersive product showcases directly to customer inboxes.",
     color: "brand-indigo"
   },
   {
@@ -23,7 +23,7 @@ const studies = [
       { label: "Fraud Attempt Reduction", value: "35%" },
       { label: "Open Rate", value: "99.1%" }
     ],
-    desc: "By verifying their sender profile with MyMsg, SecureBank eliminated the risk of phishing and ensured every transaction alert inspired confidence through verified branding.",
+    desc: "By verifying their sender profile with MyMsg RCS, SecureBank eliminated the risk of phishing and ensured every transaction alert inspired confidence through verified branding.",
     color: "brand-cyan"
   },
   {
@@ -34,7 +34,7 @@ const studies = [
       { label: "Automated Ticket Resolves", value: "80%" },
       { label: "User Engagement ROI", value: "3x" }
     ],
-    desc: "TravelMate integrated MyMsg suggested replies for flight status updates and check-ins, allowing customers to resolve common queries without waiting for an agent.",
+    desc: "TravelMate integrated MyMsg RCS suggested replies for flight status updates and check-ins, allowing customers to resolve common queries without waiting for an agent.",
     color: "brand-violet"
   }
 ];
@@ -54,7 +54,7 @@ export default function CaseStudiesPage() {
             Success <span className="gradient-text italic">Stories.</span>
           </h1>
           <p className="text-lg md:text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed font-medium">
-             Explore how industry leaders are leveraging <span className="text-brand-indigo font-black">MyMsg</span> to redefine business messaging and drive measurable growth.
+             Explore how industry leaders are leveraging <span className="text-brand-indigo font-black">MyMsg RCS</span> to redefine business messaging and drive measurable growth.
           </p>
         </motion.div>
 
@@ -128,7 +128,7 @@ export default function CaseStudiesPage() {
            <div className="absolute top-0 right-0 w-[40vw] h-[40vw] bg-brand-indigo/20 blur-[140px] rounded-full" />
            <div className="relative z-10 max-w-3xl mx-auto">
               <h2 className="text-4xl md:text-6xl font-black mb-8 leading-tight tracking-tighter">Ready to be our next <br /> <span className="italic text-brand-cyan">Success Story?</span></h2>
-              <p className="text-brand-indigo-100/70 text-lg md:text-xl font-medium mb-12 leading-relaxed">Join hundreds of brands who elevated their conversion rates using MyMsg infrastructure.</p>
+              <p className="text-brand-indigo-100/70 text-lg md:text-xl font-medium mb-12 leading-relaxed">Join hundreds of brands who elevated their conversion rates using MyMsg RCS infrastructure.</p>
               <Link to="/contact" className="btn bg-white text-[#1a2b4b] hover:bg-slate-50 px-12 py-5 !rounded-2xl text-xs font-black uppercase tracking-widest shadow-2xl">Start Your Journey Now</Link>
            </div>
         </motion.div>

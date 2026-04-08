@@ -57,7 +57,7 @@ export default function CaseStudiesSection() {
             </motion.h2>
           </Link>
           <p className="text-lg md:text-xl text-slate-500 max-w-2xl mx-auto font-medium">
-            Real stories from global leaders who transformed their messaging with MyMsg.
+            Real stories from global leaders who transformed their messaging with MyMsg RCS.
           </p>
         </div>
 
