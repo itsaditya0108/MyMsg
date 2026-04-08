@@ -49,7 +49,7 @@ export default function FAQ() {
               Have <span className="gradient-text italic">Questions?</span>
             </motion.h2>
             <p className="text-lg text-slate-500 font-medium max-w-xl mx-auto">
-               Find the answers to common questions about MyMsg RCS and next-gen business messaging.
+               Find the answers to common questions about MyMsg and next-gen business messaging.
             </p>
         </div>
 

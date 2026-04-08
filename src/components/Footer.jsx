@@ -71,7 +71,7 @@ export default function Footer() {
         </div>
         
         <div className="pt-12 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-slate-400 text-sm font-medium">© 2026 MyMsg. All rights reserved.</p>
+          <p className="text-slate-400 text-sm font-medium">© 2026 My Message. All rights reserved.</p>
           <div className="flex gap-8">
             <Link to="/privacy" className="text-slate-400 hover:text-slate-600 text-sm font-bold">Privacy Policy</Link>
             <Link to="/terms" className="text-slate-400 hover:text-slate-600 text-sm font-bold">Terms of Service</Link>

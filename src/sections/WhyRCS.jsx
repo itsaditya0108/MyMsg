@@ -15,10 +15,10 @@ export default function WhyRCS() {
           <div className="text-[10px] sm:text-[11px] font-black text-brand-indigo uppercase tracking-[0.4em] mb-6 block">The Proof in Numbers</div>
           <h2 className="text-4xl sm:text-5xl font-black text-slate-900 mb-10 leading-[1.2] tracking-tighter">
             Build Trust with <br />
-            <span className="gradient-text italic">My Msg RCS.</span>
+            <span className="gradient-text italic">MyMsg.</span>
           </h2>
           <p className="text-lg md:text-xl text-slate-500 mb-12 leading-relaxed max-w-xl font-medium">
-            Join the elite 1% of brands that utilize <span className="text-brand-indigo font-bold">My Msg RCS</span> to cut through the noise and build genuine, long-term connections.
+            Join the elite 1% of brands that utilize <span className="text-brand-indigo font-bold">MyMsg</span> to cut through the noise and build genuine, long-term connections.
           </p>
 
           <div className="space-y-8">

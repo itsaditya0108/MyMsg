@@ -28,14 +28,14 @@ export default function Hero() {
               <Check size={12} strokeWidth={4} />
             </div>
             <span className="text-[10px] font-black text-brand-indigo uppercase tracking-[0.3em]">
-              Verified My Msg RCS Solution
+              Verified MyMsg Solution
             </span>
           </div>
 
           {/* Heading */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-slate-900 mb-8 leading-[1.1] tracking-tighter">
             Elevate Your Brand with <br />
-            <span className="gradient-text italic">My Msg RCS.</span>
+            <span className="gradient-text italic">MyMsg.</span>
           </h1>
 
           {/* Subtext */}
@@ -44,7 +44,7 @@ export default function Hero() {
             <strong className="text-slate-900">
               immersive, branded experiences
             </strong>{" "}
-             using the industry-leading <span className="text-brand-indigo font-bold">My Msg RCS</span> platform.
+             using the industry-leading <span className="text-brand-indigo font-bold">MyMsg</span> platform.
           </p>
 
           {/* Buttons */}

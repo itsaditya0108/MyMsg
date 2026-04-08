@@ -122,7 +122,7 @@ export default function Contact() {
                     />
                   </div>
                   <label htmlFor="agreement" className="text-sm text-slate-600 leading-relaxed cursor-pointer select-none">
-                    Yes, I agree to receive RCS, SMS, Email, WhatsApp etc. from My Message Ltd.
+                    Yes, I agree to receive RCS, SMS, Email, WhatsApp etc. from My Message.
                   </label>
                 </div>
                 <p className="text-[11px] text-slate-400 leading-relaxed pl-9">

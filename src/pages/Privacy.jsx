@@ -6,7 +6,7 @@ export default function Privacy() {
   const sections = [
     {
       title: "1. Introduction",
-      content: "At MyMsg (a brand of My Message Ltd.), we value your privacy. This policy explains how we handle your information when you use our messaging services, including RCS, WhatsApp, and SMS."
+      content: "At MyMsg (a brand of My Message), we value your privacy. This policy explains how we handle your information when you use our messaging services, including RCS, WhatsApp, and SMS."
     },
     {
       title: "2. Information We Collect",
@@ -71,7 +71,7 @@ export default function Privacy() {
         
         <div className="mt-20 pt-12 border-t border-slate-100">
           <p className="text-slate-400 text-sm font-medium">
-            © {new Date().getFullYear()} My Message Ltd. All rights reserved.
+            © {new Date().getFullYear()} My Message. All rights reserved.
           </p>
         </div>
       </div>

@@ -60,7 +60,7 @@ export default function Features() {
                transition={{ delay: 0.2 }}
                className="text-lg md:text-xl text-slate-500 font-medium leading-relaxed"
             >
-              Unlock the future of customer interaction with the most advanced <span className="text-brand-indigo font-bold">My Msg RCS</span> toolset designed for enterprise scale.
+              Unlock the future of customer interaction with the most advanced <span className="text-brand-indigo font-bold">MyMsg</span> toolset designed for enterprise scale.
             </motion.p>
           </div>
 
