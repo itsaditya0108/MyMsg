@@ -26,7 +26,7 @@ export default function Navbar() {
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        className={`pointer-events-auto flex items-center justify-between px-6 py-3 rounded-[2rem] transition-all duration-500 w-full border ${
+        className={`pointer-events-auto flex items-center justify-between px-6 py-3 rounded-[2rem] transition-all duration-500 w-full max-w-6xl mx-auto border ${
           isScrolled 
             ? "glass-card !bg-white/80 !shadow-2xl border-brand-indigo/10 py-3 mt-0" 
             : "bg-white/50 backdrop-blur-md border-white mt-2 shadow-sm"
@@ -61,7 +61,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 to={link.path}
-                className={`relative px-6 py-2.5 text-[13px] font-black transition-colors duration-300 rounded-xl z-20 ${
+                className={`relative px-6 py-2.5 text-[15px] font-black transition-colors duration-300 rounded-xl z-20 ${
                   isActive ? "text-brand-indigo" : "text-slate-500 hover:text-slate-900"
                 }`}
               >

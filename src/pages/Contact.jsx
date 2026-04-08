@@ -71,24 +71,27 @@ export default function Contact() {
               <div className="space-y-5">
                 <input
                   type="text"
+                  required
                   className="w-full bg-slate-50 border-none rounded-2xl px-8 py-5 text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-indigo/20 transition-all font-medium placeholder:text-slate-400"
                   placeholder="Your name"
                 />
 
                 <input
                   type="email"
+                  required
                   className="w-full bg-slate-50 border-none rounded-2xl px-8 py-5 text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-indigo/20 transition-all font-medium placeholder:text-slate-400"
                   placeholder="Your email"
                 />
 
                 <input
                   type="tel"
+                  required
                   className="w-full bg-slate-50 border-none rounded-2xl px-8 py-5 text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-indigo/20 transition-all font-medium placeholder:text-slate-400"
                   placeholder="Your phone number"
                 />
 
                 <div className="relative">
-                  <select className="w-full bg-slate-50 border-none rounded-2xl px-8 py-5 text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-indigo/20 transition-all font-medium appearance-none cursor-pointer">
+                  <select required className="w-full bg-slate-50 border-none rounded-2xl px-8 py-5 text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-indigo/20 transition-all font-medium appearance-none cursor-pointer">
                     <option value="" disabled selected>Service Required</option>
                     <option>RCS Business Messaging</option>
                     <option>WhatsApp Business API</option>
@@ -105,6 +108,7 @@ export default function Contact() {
 
                 <textarea
                   rows="5"
+                  required
                   className="w-full bg-slate-50 border-none rounded-2xl px-8 py-5 text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-indigo/20 transition-all font-medium resize-none placeholder:text-slate-400"
                   placeholder="Your Message"
                 ></textarea>

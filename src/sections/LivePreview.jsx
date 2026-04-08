@@ -68,13 +68,13 @@ export default function LivePreview() {
                  { title: "Rich Media Support", desc: "Send high-res images, videos, and product carousels." },
                  { title: "Suggested Actions", desc: "Guide users with interactive reply buttons and chips." }
                ].map((feature, i) => (
-                 <div key={i} className="flex gap-4 group cursor-pointer">
-                    <div className="mt-1 w-6 h-6 rounded-full bg-brand-cyan text-white flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                       <Check size={14} strokeWidth={4} />
+                 <div key={i} className="flex gap-4 group cursor-pointer p-4 rounded-3xl hover:bg-slate-50 transition-all duration-300">
+                    <div className="mt-1 w-8 h-8 rounded-xl bg-gradient-to-br from-brand-indigo to-brand-cyan text-white flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-all duration-500 shadow-lg shadow-brand-indigo/20">
+                       <Check size={16} strokeWidth={4} />
                     </div>
                     <div>
-                       <h4 className="text-lg font-black text-slate-900 group-hover:text-brand-cyan transition-colors">{feature.title}</h4>
-                       <p className="text-slate-500 text-sm font-medium">{feature.desc}</p>
+                       <h4 className="text-lg font-black text-slate-900 group-hover:text-brand-indigo transition-colors duration-300">{feature.title}</h4>
+                       <p className="text-slate-500 text-sm font-medium leading-relaxed">{feature.desc}</p>
                     </div>
                  </div>
                ))}
@@ -90,12 +90,17 @@ export default function LivePreview() {
             <div className="relative z-10 w-[320px] h-[640px] bg-slate-950 rounded-[3rem] border-[8px] border-slate-900 shadow-[20px_40px_100px_rgba(0,0,0,0.2)] overflow-hidden">
                {/* Phone Top Bar */}
                <div className="h-16 bg-white border-b border-slate-100 flex items-center px-4 gap-3">
-                  <div className="w-8 h-8 rounded-full bg-brand-indigo flex items-center justify-center text-white">
+                  <div className="w-8 h-8 rounded-full bg-brand-indigo flex items-center justify-center text-white shadow-inner">
                      <User size={16} />
                   </div>
                   <div>
-                     <p className="text-xs font-black text-slate-900 leading-none">Luxury Brand</p>
-                     <p className="text-[9px] text-green-500 font-bold">Verified Business</p>
+                     <p className="text-xs font-black text-slate-900 leading-none flex items-center gap-1">
+                        Luxury Brand
+                        <div className="w-2.5 h-2.5 bg-brand-cyan rounded-full flex items-center justify-center text-white p-[1.5px]">
+                           <Check size={10} strokeWidth={5} />
+                        </div>
+                     </p>
+                     <p className="text-[9px] text-brand-cyan font-bold">Verified Business</p>
                   </div>
                </div>
 
